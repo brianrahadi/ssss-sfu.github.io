@@ -89,6 +89,6 @@ export const getStaticPaths = async () => {
 
   return {
     paths: slugs ? slugs.map(({ slug }) => `/blog/${slug}`) : [],
-    fallback: "true",
+    fallback: "false",
   };
 };
